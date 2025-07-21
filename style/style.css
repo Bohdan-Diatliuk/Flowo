@@ -101,32 +101,8 @@ nav li {
   color: #708090;
 }
 
-#menu .menu_2 {
-  background-color: #f5fffa;
-  border-radius: 8px;
-  padding: 5px 20px;
-  color: #708090;
-}
-
-#menu .menu_3 {
-  background-color: #f5fffa;
-  border-radius: 8px;
-  padding: 5px 20px;
-  color: #708090;
-}
-
-#menu .menu_4 {
-  background-color: #f5fffa;
-  border-radius: 8px;
-  padding: 5px 20px;
-  color: #708090;
-}
-
-#menu .menu_5 {
-  background-color: #f5fffa;
-  border-radius: 8px;
-  padding: 5px 20px;
-  color: #708090;
+#menu .menu_1:hover {
+  color: blue;
 }
 
 nav ul {
@@ -161,7 +137,9 @@ nav a {
   padding: 5px 10px;
   margin: 10px;
   color: #5b3cc4;
+  
 }
+
 
 main {
   flex: 1;
@@ -264,10 +242,6 @@ main {
 .card p {
   font-size: 0.85rem;
   color: #666;
-}
-
-.flowo-web {
-  
 }
 
 .add-card-form {
