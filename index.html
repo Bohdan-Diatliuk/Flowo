@@ -4,36 +4,42 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kanban Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style/style.css" />
 </head>
 <body>
   <div class="container">
     <aside>
-      <div>
-        <div class="project-name">Project M.</div>
-        <nav>
-          <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="messages.html">Messages</a></li>
-            <li><a href="tasks.html">Tasks</a></li>
-            <li><a href="members.html">Members</a></li>
-            <li><a href="settings.html">Settings</a></li>
-          </ul>
-        </nav>
+      <div id="sidebar" class="sidebar">
+  <div class="header">
+    <button id="toggle">☰</button>
+    
+  </div>
+
+  <nav id="menu">
+    <ul>
+      <li><a href="home.html" class="menu_1">Home</a></li>
+      <li><a href="tasks.html" class="menu_3">Tasks</a></li>
+      <li><a href="members.html" class="menu_4">Members</a></li>
+      <li><a href="messages.html" class="menu_2">Messages</a></li>
+      <li><a href="settings.html" class="menu_5">Settings</a></li>
+    </ul>
+  
         <div class="projects">
           <h4>My Projects</h4>
           <ul>
-            <li class="active">Mobile App</li>
-            <li>Website Redesign</li>
-            <li>Design System</li>
-            <li>Wireframes</li>
+            <li class="active_1">Mobile App</li>
+            <li class="active_2">Website Redesign</li>
+            <li class="active_3">Design System</li>
+            <li class="active_4">Wireframes</li>
           </ul>
         </div>
       </div>
+    </nav>>
     </aside>
     <main>
       <div class="topbar">
-        <h1>Mobile App</h1>
+        
+        <h1>FLOWO App</h1>
         
       </div>
       <div class="kanban-board">
@@ -64,6 +70,7 @@
       </div>
     </main>
   </div>
-  <script src="script.js"></script>
+  <script src="script/sidebar.js"></script>
+  <script src="script/script.js"></script>
 </body>
 </html>
