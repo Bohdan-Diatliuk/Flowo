@@ -95,6 +95,9 @@ nav li {
 }
 
 #menu .menu_1 {
+  font-weight: 600;
+  font-style: normal;
+ 
   background-color: #f5fffa;
   border-radius: 8px;
   padding: 5px 20px;
@@ -137,9 +140,9 @@ nav a {
   padding: 5px 10px;
   margin: 10px;
   color: #5b3cc4;
+  font-weight: 600;
   
 }
-
 
 main {
   flex: 1;
