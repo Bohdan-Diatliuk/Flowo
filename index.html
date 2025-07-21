@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kanban Dashboard</title>
-  <link rel="stylesheet" href="style/style.css" />
+  <title>Flowo</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="icon" href="assets/F.png">
 </head>
 <body>
   <div class="container">
@@ -18,19 +19,16 @@
   <nav id="menu">
     <ul>
       <li><a href="home.html" class="menu_1">Home</a></li>
-      <li><a href="tasks.html" class="menu_3">Tasks</a></li>
-      <li><a href="members.html" class="menu_4">Members</a></li>
-      <li><a href="messages.html" class="menu_2">Messages</a></li>
-      <li><a href="settings.html" class="menu_5">Settings</a></li>
+      <li><a href="tasks.html" class="menu_1">Tasks</a></li>
+      <li><a href="members.html" class="menu_1">Members</a></li>
+      <li><a href="messages.html" class="menu_1">Messages</a></li>
+      <li><a href="settings.html" class="menu_1">Settings</a></li>
     </ul>
   
         <div class="projects">
           <h4>My Projects</h4>
           <ul>
-            <li class="active_1">Mobile App</li>
-            <li class="active_2">Website Redesign</li>
-            <li class="active_3">Design System</li>
-            <li class="active_4">Wireframes</li>
+            <li class="active_1">Flowo</li>
           </ul>
         </div>
       </div>
@@ -39,10 +37,13 @@
     <main>
       <div class="topbar">
         
-        <h1>FLOWO App</h1>
+        <h1>FLOWO Web-Board</h1>
         
       </div>
+      <div class="board-wrapers">
       <div class="kanban-board">
+      
+        <div class="container_board">
         <div class="column" data-column="To Do">
           <h3>To Do</h3>
           <div class="card-list"></div>
@@ -51,6 +52,8 @@
             <button type="submit">+</button>
           </form>
         </div>
+      </div>
+        <div class="container_board">
         <div class="column" data-column="On Progress">
           <h3>On Progress</h3>
           <div class="card-list"></div>
@@ -59,6 +62,9 @@
             <button type="submit">+</button>
           </form>
         </div>
+        </div>
+
+        <div class="container_board">
         <div class="column" data-column="Done">
           <h3>Done</h3>
           <div class="card-list"></div>
@@ -66,6 +72,8 @@
             <input type="text" placeholder="Add task..." />
             <button type="submit">+</button>
           </form>
+        </div>
+        </div>
         </div>
       </div>
     </main>
