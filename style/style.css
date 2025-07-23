@@ -21,9 +21,13 @@ body {
   height: 100%;
   background-image: url('https://i.pinimg.com/736x/eb/07/4a/eb074af02b5874d680bb4d30d9b4534c.jpg');
   background-size: cover;
-  background-attachment: center;
+  background-attachment: fixed;
+  background-position: center;
   filter: blur(5px);
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 aside {
@@ -185,49 +189,50 @@ main {
   padding: 20px;
 }
 
+.container_board_1,
+.container_board_2,
+.container_board_3 {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  background: #c49c25;
+  filter: drop-shadow(0 1px 5px rgba(1603, 176, 15, 1.5));
+  width: 300px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  transition: transform 0.3s ease;
+}
+
+.container_board_1:hover {
+  transform: translate(-50%) scale(1.5);
+}
+.container_board_2:hover{
+  transform: translate(-50%) scale(1.5);
+}
+
+.container_board_3:hover {
+  transform: translate(-50%) scale(1.5);
+}
+
 .container_board_1 {
-  position: absolute;
   top: 50%;
   left: 30%;
   transform: translate(-50%, -50%);
-  background: #c49c25;
-  filter: drop-shadow(0 1px 5px rgba(1603, 176, 15, 1.5));
-  width: 300px;
-  padding: 10px 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  flex: 1;
-  transition: transform 0.3s ease;
+
 }
 
 .container_board_2 {
-  position: absolute;
   top: 50%;
   left: 55%;
   transform: translate(-50%, -50%);
-  background: #c49c25;
-  filter: drop-shadow(0 1px 5px rgba(1603, 176, 15, 1.5));
-  width: 300px;
-  padding: 10px 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  flex: 1;
-  transition: transform 0.3s ease;
+
 }
 
 .container_board_3 {
-  position: absolute;
   top: 50%;
   left: 80%;
   transform: translate(-50%, -50%);
-  background: #c49c25;
-  filter: drop-shadow(0 1px 5px rgba(1603, 176, 15, 1.5));
-  width: 300px;
-  padding: 10px 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  flex: 1;
-  transition: transform 0.3s ease;
 }
 
 .container_board:hover {
@@ -314,7 +319,8 @@ main {
 }
 
 .topbar .web-board {
-  position: absolute;
+  text-align: center;
+  position: fixed;
   top: 10%;
   left: 50%;
   transform: translateX(-30%);
@@ -324,7 +330,6 @@ main {
   text-shadow: 10px 3px 5px rgba(188, 168, 18, 0.248);
   color: #e3dcdc;
   max-width: 100%;
-  text-align: center;
   padding: 20px;
   background: rgba(80, 52, 9, 0.5);
   border-radius: 10px;
