@@ -85,9 +85,6 @@ nav li {
 
 #menu {
   transition: max-height 0.3s ease, opacity 0.3s ease;
-  overflow: hidden;
-  max-height: 1000px;
-  opacity: 1;
 }
 
 #menu.hidden {
@@ -106,6 +103,7 @@ nav li {
 }
 
 #menu .menu_1:hover {
+  transition: translateX(-30%) scale(1.05);
   color: blue;
 }
 
@@ -163,25 +161,26 @@ nav a {
   z-index: 10;
 }
 
-.main-settings .title-set:hover {
+.main-settings #title-set:hover {
   transform: translateX(-30%) scale(1.05);
 }
 
 .settings-container {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   background: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+  box-shadow: 200px 40px 8px rgba(0, 0, 0, 0.2);
   color: #e3dcdc;
   text-shadow: 10px 3px 5px rgba(108, 141, 48, 0.155);
   position: absolute;
   top: 25%;
-  left: 45%;
+  left: 43%;
   transform: translateX(-30%);
   max-width: 100%;
-  padding: 20px;
+  padding: 200px;
   transition: transform 0.3s ease;
-  z-index: 10;
+}
+
+.setting-button {
 }
