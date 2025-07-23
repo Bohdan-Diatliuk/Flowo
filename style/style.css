@@ -1,7 +1,8 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: all 1.5s ease;
 }
         
 body {
@@ -126,6 +127,7 @@ nav a {
 
 
 .projects {
+  color: #ccc;
   margin-top: 30px;    
 }
 
@@ -180,6 +182,8 @@ main {
   padding: 10px 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  transition: transform 0.3s ease;
 }
 
 @media (max-width: 600px) {
@@ -273,3 +277,14 @@ main {
   opacity: 0.5;
 }
 
+.topbar .web-board {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 3rem;
+  text-shadow: 10px 3px 5px rgba(65, 37, 108, 0.299);
+  color: #333;
+  max-width: 100%;
+  text-align: center;
+  flex: 1;
+  text-decoration: none;
+}
