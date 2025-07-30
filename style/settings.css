@@ -7,8 +7,8 @@
         
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #f8f9fc;
-  color: #333;
+  background-color: #24242A;
+  color: #e4dddd;
 }
 
 .container {
@@ -84,7 +84,9 @@ nav li {
 }
 
 #menu {
-  transition: max-height 0.3s ease, opacity 0.3s ease;
+  transition: max-height 1.6s ease, opacity 1.5s ease ;
+  max-height: 1000px;
+  opacity: 1;
 }
 
 #menu.hidden {

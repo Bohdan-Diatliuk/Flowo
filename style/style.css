@@ -6,7 +6,7 @@
 }
         
 body {
-  background-color: #f8f9fc;
+  background-color: #24242A;
   color: #333;
 }
 
@@ -16,19 +16,6 @@ body {
   overflow: hidden;
 }
 
-.main-content  {
-  width: 100%;
-  height: 100%;
-  background-image: url('https://i.pinimg.com/736x/eb/07/4a/eb074af02b5874d680bb4d30d9b4534c.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  filter: blur(5px);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
 
 aside {
   width: 250px;
@@ -97,7 +84,6 @@ nav li {
 }
 
 #menu {
-  transition: max-height 0.3s ease, opacity 0.3s ease;
   overflow: hidden;
   max-height: 1000px;
   opacity: 1;
